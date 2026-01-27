@@ -1,0 +1,52 @@
+[
+  {
+    "firstName": "Emma",
+    "lastName": "Johnson",
+    "height": 165
+  },
+  {
+    "firstName": "Liam",
+    "lastName": "Williams",
+    "height": 182
+  },
+  {
+    "firstName": "Olivia",
+    "lastName": "Brown",
+    "height": 170
+  },
+  {
+    "firstName": "Noah",
+    "lastName": "Davis",
+    "height": 178
+  },
+  {
+    "firstName": "Ava",
+    "lastName": "Miller",
+    "height": 162
+  },
+  {
+    "firstName": "Ethan",
+    "lastName": "Wilson",
+    "height": 185
+  },
+  {
+    "firstName": "Sophia",
+    "lastName": "Moore",
+    "height": 168
+  },
+  {
+    "firstName": "Mason",
+    "lastName": "Taylor",
+    "height": 175
+  },
+  {
+    "firstName": "Isabella",
+    "lastName": "Anderson",
+    "height": 163
+  },
+  {
+    "firstName": "William",
+    "lastName": "Thomas",
+    "height": 180
+  }
+]

@@ -1,6 +1,6 @@
 namespace DotNetWorkshop2026.Helpers;
 
-class GridRenderer
+public static class GridRenderer
 {
     public static void Render(IEnumerable<IEnumerable<bool>> grid)
     {

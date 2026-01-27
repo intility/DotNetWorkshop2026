@@ -1,6 +1,6 @@
 namespace DotNetWorkshop2026.Helpers;
 
-static class Shapes
+public static class Shapes
 {
     public static void Separator(int width = 6)
     {

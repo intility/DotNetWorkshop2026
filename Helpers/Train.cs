@@ -24,7 +24,7 @@ public static class Train
     /// The height of the train in lines.
     /// </summary>
     public static int Height => _art.Length;
-    
+
     /// <summary>
     /// The width of the track in characters. Going out of bounds will cause an error.
     /// </summary>
@@ -45,26 +45,30 @@ public static class Train
         if (position < 0)
         {
             RenderEmptyTrack();
-            RenderError("ERROR: Position out of bounds!",
+            RenderError(
+                "ERROR: Position out of bounds!",
                 $"Position cannot be negative.",
                 $"Got: position = {position}",
                 $"Expected: position >= 0",
                 "",
                 "Hint: Check your wrap-around logic.",
-                "When position goes below 0, reset it to trackWidth - 1");
+                "When position goes below 0, reset it to trackWidth - 1"
+            );
             Environment.Exit(1);
         }
 
         if (position >= TrackWidth)
         {
             RenderEmptyTrack();
-            RenderError("ERROR: Position out of bounds!",
+            RenderError(
+                "ERROR: Position out of bounds!",
                 $"Position must be less than trackWidth.",
                 $"Got: position = {position}",
                 $"Expected: position < {TrackWidth} (valid range: 0 to {TrackWidth - 1})",
                 "",
                 "Hint: This is an off-by-one error!",
-                "Arrays are zero-indexed, so the last valid index is trackWidth - 1");
+                "Arrays are zero-indexed, so the last valid index is trackWidth - 1"
+            );
             Environment.Exit(1);
         }
 
@@ -96,7 +100,7 @@ public static class Train
     /// </summary>
     public static void Clear()
     {
-        Console.SetCursorPosition(0, 0);
+        Console.Clear();
     }
 
     private static void RenderEmptyTrack()
@@ -117,7 +121,8 @@ public static class Train
         int maxLength = title.Length;
         foreach (var line in lines)
         {
-            if (line.Length > maxLength) maxLength = line.Length;
+            if (line.Length > maxLength)
+                maxLength = line.Length;
         }
         int boxWidth = maxLength + 4;
 

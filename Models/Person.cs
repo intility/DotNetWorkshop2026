@@ -1,4 +1,4 @@
-﻿namespace DotnetWorkshop2026.Models;
+﻿namespace DotNetWorkshop2026.Models;
 
 public class Person
 {
