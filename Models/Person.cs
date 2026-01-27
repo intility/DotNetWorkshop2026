@@ -11,7 +11,21 @@ public class Person
 
     public string GetFullName() => $"{FirstName} {LastName}";
 
-    public string GetMotherFullName() => Mother?.GetFullName() ?? "Unknown";
+    public string GetMotherFullName()
+    {
+        if (Mother != null)
+        {
+            return Mother.GetFullName();
+        }
+        return "Unknown";
+    }
 
-    public string GetFatherFullName() => Father?.GetFullName() ?? "Unknown";
+    public string GetFatherFullName()
+    {
+        if (Father != null)
+        {
+            return Father.GetFullName();
+        }
+        return "Unknown";
+    }
 }
